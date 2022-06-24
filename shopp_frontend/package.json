@@ -1,8 +1,10 @@
-{
+{ "homepage": "https://abhinavdhangar.github.io/frontend/shopp_frontend/",
   "name": "shopp_frontend",
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "postinstall": "patch-package",
     "dev": "vite",
     "build": "vite build",
